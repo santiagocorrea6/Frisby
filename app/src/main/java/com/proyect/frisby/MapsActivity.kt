@@ -46,7 +46,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnPoiCli
 
         mMap.uiSettings.isZoomControlsEnabled = true //Coloca el + y - del zoom
 
-        mMap.setOnPoiClickListener(this)
+        //mMap.setOnPoiClickListener(this)
 
         if(restaurantes == 0) {
             mMap.addMarker(MarkerOptions().position(frisby).title("$name"))
@@ -102,7 +102,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnPoiCli
 
     override fun onPoiClick(poi: PointOfInterest?) {
 
-        Toast.makeText(this,"Nombre: ${poi?.name},  Latitud : ${poi?.latLng?.latitude}, Longitud : ${poi?.latLng?.longitude}\"" ,Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this,"Nombre: ${poi?.name},  Latitud : ${poi?.latLng?.latitude}, Longitud : ${poi?.latLng?.longitude}\"" ,Toast.LENGTH_SHORT).show()
 
     }
 
