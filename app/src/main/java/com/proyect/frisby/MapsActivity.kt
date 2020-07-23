@@ -54,29 +54,29 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnPoiCli
             mMap.addMarker(MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)).position(frisby))
 
         } else {
-            val frisbyFlorida = LatLng(6.2727595,-75.5776327)
+            val frisbyFlorida = LatLng(6.270746896948369, -75.57714320719242)
             mMap.addMarker(MarkerOptions().position(frisbyFlorida).title("Frisby C.C. Florida"))
             mMap.addMarker(MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)).position(frisbyFlorida))
 
 
-            val frisbyManrique = LatLng(6.2662108,-75.5621025)
+            val frisbyManrique = LatLng(6.26529456928309, -75.55525168776512)
             mMap.addMarker(MarkerOptions().position(frisbyManrique).title("Frisby Manrique"))
             mMap.addMarker(MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)).position(frisbyManrique))
 
-            val frisbyExitoColombia = LatLng(6.2633445,-75.5667864)
+            val frisbyExitoColombia = LatLng(6.255444241742275, -75.58261826634407)
             mMap.addMarker(MarkerOptions().position(frisbyExitoColombia).title("Frisby Exito - Colombia"))
             mMap.addMarker(MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)).position(frisbyExitoColombia))
 
 
-            val frisbyJumbo65 = LatLng(6.2602986,-75.5786106)
+            val frisbyJumbo65 = LatLng(6.251924794266287, -75.58538496494293)
             mMap.addMarker(MarkerOptions().position(frisbyJumbo65).title("Frisby Jumbo de la 65"))
             mMap.addMarker(MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)).position(frisbyJumbo65))
 
-            val frisbySanDiego = LatLng(6.2375548,-75.5780888)
+            val frisbySanDiego = LatLng(6.235599714287427, -75.56909792125226)
             mMap.addMarker(MarkerOptions().position(frisbySanDiego).title("Frisby San Diego"))
             mMap.addMarker(MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)).position(frisbySanDiego))
 
-            val frisbyAventura = LatLng(6.2633445,-75.5667864)
+            val frisbyAventura = LatLng(6.264100781869583, -75.5673699080944)
             mMap.addMarker(MarkerOptions().position(frisbyAventura).title("Frisby C.C. Aventura"))
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(frisbyAventura,13F))
             mMap.addMarker(MarkerOptions().icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)).position(frisbyAventura))
@@ -108,12 +108,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnPoiCli
 
     private fun seleccionarDireccion(restaurante: Restaurante) {
         when (restaurante.id) {
-            1 -> frisby = LatLng(6.2727595, -75.5776327)
-            2 -> frisby = LatLng(6.2662108, -75.5621025)
-            3 -> frisby = LatLng(6.2633445, -75.5667864)
-            4 -> frisby = LatLng(6.2602986, -75.5786106)
-            5 -> frisby = LatLng(6.2375548, -75.5780888)
-            6 -> frisby = LatLng(6.2633445, -75.5667864)
+            1 -> frisby = LatLng(6.270746896948369, -75.57714320719242)
+            2 -> frisby = LatLng(6.26529456928309, -75.55525168776512)
+            3 -> frisby = LatLng(6.255444241742275, -75.58261826634407)
+            4 -> frisby = LatLng(6.251924794266287, -75.58538496494293)
+            5 -> frisby = LatLng(6.235599714287427, -75.56909792125226)
+            6 -> frisby = LatLng(6.264100781869583, -75.5673699080944)
             0 -> restaurantes = 1
             else -> frisby = LatLng(6.268844, -75.6664331)
         }
